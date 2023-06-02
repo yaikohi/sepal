@@ -36,15 +36,15 @@ importers:
 
   apps/expo:
     dependencies:
-      '@acme/api':
-        specifier: '*'
-        version: link:../../packages/api
-      '@acme/tailwind-config':
-        specifier: '*'
-        version: link:../../packages/config/tailwind
       '@clerk/clerk-expo':
         specifier: ^0.15.0
         version: 0.15.0(@babel/core@7.20.5)(@types/react@18.0.26)(expo-auth-session@4.0.3)(expo-web-browser@12.1.1)(react-dom@18.2.0)(react-native@0.70.5)(react@18.2.0)
+      '@sepal/api':
+        specifier: '*'
+        version: link:../../packages/api
+      '@sepal/tailwind-config':
+        specifier: '*'
+        version: link:../../packages/config/tailwind
       '@shopify/flash-list':
         specifier: ^1.4.0
         version: 1.4.0(@babel/runtime@7.20.6)(react-native@0.70.5)(react@18.2.0)
@@ -127,18 +127,18 @@ importers:
 
   apps/nextjs:
     dependencies:
-      '@acme/api':
-        specifier: '*'
-        version: link:../../packages/api
-      '@acme/db':
-        specifier: '*'
-        version: link:../../packages/db
-      '@acme/tailwind-config':
-        specifier: '*'
-        version: link:../../packages/config/tailwind
       '@clerk/nextjs':
         specifier: ^4.11.0
         version: 4.11.0(next@13.1.6)(react-dom@18.2.0)(react@18.2.0)
+      '@sepal/api':
+        specifier: '*'
+        version: link:../../packages/api
+      '@sepal/db':
+        specifier: '*'
+        version: link:../../packages/db
+      '@sepal/tailwind-config':
+        specifier: '*'
+        version: link:../../packages/config/tailwind
       '@tanstack/react-query':
         specifier: ^4.16.1
         version: 4.19.1(react-dom@18.2.0)(react-native@0.70.5)(react@18.2.0)
@@ -197,7 +197,7 @@ importers:
 
   packages/api:
     dependencies:
-      '@acme/db':
+      '@sepal/db':
         specifier: '*'
         version: link:../db
       '@trpc/client':
